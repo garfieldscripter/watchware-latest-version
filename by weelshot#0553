@@ -1,0 +1,679 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Gui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local SideBar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Scripts = Instance.new("TextButton")
+local folder = Instance.new("ImageButton")
+local Credits = Instance.new("TextButton")
+local people = Instance.new("ImageButton")
+local ImageLabel = Instance.new("ImageLabel")
+local Settings = Instance.new("TextButton")
+local help = Instance.new("ImageButton")
+local ScriptsFrame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UICorner_2 = Instance.new("UICorner")
+local SeperationLine = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local controllabledummy = Instance.new("TextButton")
+local catpet = Instance.new("TextButton")
+local VHUB = Instance.new("TextButton")
+local Syntax13 = Instance.new("TextButton")
+local StreamSniper = Instance.new("TextButton")
+local SCP096 = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local LXHub = Instance.new("TextButton")
+local FEDog = Instance.new("TextButton")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local CreditsFrame = Instance.new("Frame")
+local Credits1 = Instance.new("TextLabel")
+local Credits1_2 = Instance.new("TextLabel")
+local Credits1_3 = Instance.new("TextLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local Credits1_4 = Instance.new("TextLabel")
+local TopBar = Instance.new("Frame")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local SettingsFrame = Instance.new("Frame")
+local WelcomeTo = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local Desc = Instance.new("TextLabel")
+local Greybox = Instance.new("ImageLabel")
+local Tree = Instance.new("ImageLabel")
+local ImageLabel_7 = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+Gui.Name = "Gui"
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Gui.ResetOnSpawn = false
+
+Frame.Parent = Gui
+Frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0316675194, 0, 0.402453899, 0)
+Frame.Size = UDim2.new(0, 573, 0, 344)
+Frame.ZIndex = 0
+
+SideBar.Name = "SideBar"
+SideBar.Parent = Frame
+SideBar.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+SideBar.Position = UDim2.new(0, 0, 0.16167441, 0)
+SideBar.Size = UDim2.new(0, 140, 0, 282)
+SideBar.ZIndex = 0
+
+UICorner.Parent = SideBar
+
+Scripts.Name = "Scripts"
+Scripts.Parent = SideBar
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0.184397161, 0, 0.0709219873, 0)
+Scripts.Size = UDim2.new(0, 100, 0, 35)
+Scripts.Font = Enum.Font.Fantasy
+Scripts.Text = "Scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextSize = 16.000
+
+folder.Name = "folder"
+folder.Parent = Scripts
+folder.BackgroundTransparency = 1.000
+folder.LayoutOrder = 9
+folder.Position = UDim2.new(-0.102198824, 0, 0.133304149, 0)
+folder.Size = UDim2.new(0, 25, 0, 25)
+folder.ZIndex = 2
+folder.Image = "rbxassetid://3926305904"
+folder.ImageRectOffset = Vector2.new(804, 44)
+folder.ImageRectSize = Vector2.new(36, 36)
+
+Credits.Name = "Credits"
+Credits.Parent = SideBar
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.111915752, 0, 0.301418453, 0)
+Credits.Size = UDim2.new(0, 134, 0, 35)
+Credits.Font = Enum.Font.Fantasy
+Credits.Text = "Community"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 16.000
+
+people.Name = "people"
+people.Parent = Credits
+people.BackgroundTransparency = 1.000
+people.Position = UDim2.new(-0.00719882548, 0, 0.127344429, 0)
+people.Size = UDim2.new(0, 25, 0, 25)
+people.ZIndex = 2
+people.Image = "rbxassetid://3926305904"
+people.ImageRectOffset = Vector2.new(144, 4)
+people.ImageRectSize = Vector2.new(24, 24)
+
+ImageLabel.Parent = SideBar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.111332417, 0, 0.662962973, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=8001061647"
+
+Settings.Name = "Settings"
+Settings.Parent = SideBar
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0.0450015254, 0, 0.507092178, 0)
+Settings.Size = UDim2.new(0, 129, 0, 40)
+Settings.Font = Enum.Font.Fantasy
+Settings.Text = "Home"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 16.000
+
+help.Name = "help"
+help.Parent = Settings
+help.BackgroundTransparency = 1.000
+help.LayoutOrder = 3
+help.Position = UDim2.new(0.0476190485, 0, 0.22857143, 0)
+help.Size = UDim2.new(0, 24, 0, 21)
+help.ZIndex = 2
+help.Image = "rbxassetid://3926305904"
+help.ImageRectOffset = Vector2.new(924, 164)
+help.ImageRectSize = Vector2.new(36, 36)
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = Frame
+ScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsFrame.BackgroundTransparency = 1.000
+ScriptsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
+ScriptsFrame.Size = UDim2.new(0, 416, 0, 270)
+ScriptsFrame.Visible = false
+
+ScrollingFrame.Parent = ScriptsFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.00233100005, 0, -0.046099402, 0)
+ScrollingFrame.Size = UDim2.new(0, 416, 0, 283)
+ScrollingFrame.ZIndex = 0
+ScrollingFrame.ScrollBarThickness = 5
+
+UICorner_2.Parent = ScrollingFrame
+
+SeperationLine.Name = "SeperationLine"
+SeperationLine.Parent = ScrollingFrame
+SeperationLine.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SeperationLine.Position = UDim2.new(0, 0, 0.544744015, 0)
+SeperationLine.Size = UDim2.new(0, 418, 0, 9)
+SeperationLine.ZIndex = 2
+
+ImageLabel_2.Parent = ScrollingFrame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.650521219, 0, 0.740176499, 0)
+ImageLabel_2.Size = UDim2.new(0, 30, 0, 30)
+ImageLabel_2.ZIndex = 2
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=614809143"
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.242990658, 0, -0.00015760446, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.Fantasy
+TextLabel.Text = "Free FE Scripts"
+TextLabel.TextColor3 = Color3.fromRGB(202, 202, 202)
+TextLabel.TextSize = 25.000
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.242990658, 0, 0.565445244, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.Fantasy
+TextLabel_2.Text = "Paid FE Scripts (Robux)"
+TextLabel_2.TextColor3 = Color3.fromRGB(202, 202, 202)
+TextLabel_2.TextSize = 25.000
+
+controllabledummy.Name = "controllable dummy"
+controllabledummy.Parent = ScrollingFrame
+controllabledummy.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+controllabledummy.Position = UDim2.new(0.497026384, 0, 0.675531983, 0)
+controllabledummy.Size = UDim2.new(0, 154, 0, 31)
+controllabledummy.Font = Enum.Font.Fantasy
+controllabledummy.Text = "Controllable Dummy"
+controllabledummy.TextColor3 = Color3.fromRGB(0, 0, 0)
+controllabledummy.TextSize = 14.000
+
+catpet.Name = "cat pet"
+catpet.Parent = ScrollingFrame
+catpet.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+catpet.Position = UDim2.new(0.0297366679, 0, 0.675532043, 0)
+catpet.Size = UDim2.new(0, 154, 0, 31)
+catpet.Font = Enum.Font.Fantasy
+catpet.Text = "FE Cat Pet "
+catpet.TextColor3 = Color3.fromRGB(0, 0, 0)
+catpet.TextSize = 14.000
+
+VHUB.Name = "VHUB"
+VHUB.Parent = ScrollingFrame
+VHUB.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+VHUB.Position = UDim2.new(0.0302867256, 0, 0.195035324, 0)
+VHUB.Size = UDim2.new(0, 154, 0, 31)
+VHUB.Font = Enum.Font.Fantasy
+VHUB.Text = "VHUB"
+VHUB.TextColor3 = Color3.fromRGB(0, 0, 0)
+VHUB.TextSize = 14.000
+
+Syntax13.Name = "Syntax 1.3"
+Syntax13.Parent = ScrollingFrame
+Syntax13.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+Syntax13.Position = UDim2.new(0.461429507, 0, 0.195035487, 0)
+Syntax13.Size = UDim2.new(0, 154, 0, 31)
+Syntax13.Font = Enum.Font.Fantasy
+Syntax13.Text = "Syntax 1.3"
+Syntax13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Syntax13.TextSize = 14.000
+
+StreamSniper.Name = "Stream Sniper"
+StreamSniper.Parent = ScrollingFrame
+StreamSniper.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+StreamSniper.Position = UDim2.new(0.460193276, 0, 0.308510482, 0)
+StreamSniper.Size = UDim2.new(0, 154, 0, 31)
+StreamSniper.Font = Enum.Font.Fantasy
+StreamSniper.Text = "Stream Sniper"
+StreamSniper.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamSniper.TextSize = 14.000
+
+SCP096.Name = "SCP096"
+SCP096.Parent = ScrollingFrame
+SCP096.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+SCP096.Position = UDim2.new(0.258708596, 0, 0.43617022, 0)
+SCP096.Size = UDim2.new(0, 154, 0, 31)
+SCP096.Font = Enum.Font.Fantasy
+SCP096.Text = "SCP - 096"
+SCP096.TextColor3 = Color3.fromRGB(0, 0, 0)
+SCP096.TextSize = 14.000
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = ScrollingFrame
+OwlHub.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+OwlHub.Position = UDim2.new(0.0302867107, 0, 0.0921986476, 0)
+OwlHub.Size = UDim2.new(0, 154, 0, 31)
+OwlHub.Font = Enum.Font.Fantasy
+OwlHub.Text = "OwlHub"
+OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+OwlHub.TextSize = 14.000
+
+LXHub.Name = "LXHub"
+LXHub.Parent = ScrollingFrame
+LXHub.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+LXHub.Position = UDim2.new(0.0302867256, 0, 0.308510482, 0)
+LXHub.Size = UDim2.new(0, 154, 0, 31)
+LXHub.Font = Enum.Font.Fantasy
+LXHub.Text = "LXHub"
+LXHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+LXHub.TextSize = 14.000
+
+FEDog.Name = "FE Dog"
+FEDog.Parent = ScrollingFrame
+FEDog.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+FEDog.Position = UDim2.new(0.459093183, 0, 0.0921985283, 0)
+FEDog.Size = UDim2.new(0, 154, 0, 31)
+FEDog.ZIndex = 0
+FEDog.Font = Enum.Font.Fantasy
+FEDog.Text = "FE Dog"
+FEDog.TextColor3 = Color3.fromRGB(0, 0, 0)
+FEDog.TextSize = 14.000
+
+ImageLabel_3.Parent = ScrollingFrame
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(0.178423762, 0, 0.741791964, 0)
+ImageLabel_3.Size = UDim2.new(0, 30, 0, 30)
+ImageLabel_3.ZIndex = 2
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=614809143"
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = Frame
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsFrame.BackgroundTransparency = 1.000
+CreditsFrame.Position = UDim2.new(0.244018078, 0, 0.161764711, 0)
+CreditsFrame.Size = UDim2.new(0, 416, 0, 270)
+CreditsFrame.Visible = false
+
+Credits1.Name = "Credits1"
+Credits1.Parent = CreditsFrame
+Credits1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits1.BackgroundTransparency = 1.000
+Credits1.Position = UDim2.new(0.212616846, 0, -0.0106382892, 0)
+Credits1.Size = UDim2.new(0, 229, 0, 58)
+Credits1.Font = Enum.Font.Fantasy
+Credits1.Text = "Join our Discord!"
+Credits1.TextColor3 = Color3.fromRGB(207, 207, 207)
+Credits1.TextSize = 30.000
+
+Credits1_2.Name = "Credits1"
+Credits1_2.Parent = CreditsFrame
+Credits1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits1_2.BackgroundTransparency = 1.000
+Credits1_2.Position = UDim2.new(0.228971973, 0, 0.166666687, 0)
+Credits1_2.Size = UDim2.new(0, 229, 0, 58)
+Credits1_2.Font = Enum.Font.Fantasy
+Credits1_2.Text = "You can join our Discord server to get notified if a update happens,"
+Credits1_2.TextColor3 = Color3.fromRGB(207, 207, 207)
+Credits1_2.TextSize = 15.000
+
+Credits1_3.Name = "Credits1"
+Credits1_3.Parent = CreditsFrame
+Credits1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits1_3.BackgroundTransparency = 1.000
+Credits1_3.Position = UDim2.new(0.228971973, 0, 0.251773059, 0)
+Credits1_3.Size = UDim2.new(0, 229, 0, 58)
+Credits1_3.Font = Enum.Font.Fantasy
+Credits1_3.Text = "or I guess you can just get the hats for the required scripts."
+Credits1_3.TextColor3 = Color3.fromRGB(207, 207, 207)
+Credits1_3.TextSize = 15.000
+
+ImageLabel_4.Parent = CreditsFrame
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.Position = UDim2.new(0.0225557145, 0, 0.589046478, 0)
+ImageLabel_4.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=7202182439"
+
+Credits1_4.Name = "Credits1"
+Credits1_4.Parent = CreditsFrame
+Credits1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits1_4.BackgroundTransparency = 1.000
+Credits1_4.Position = UDim2.new(0.387378693, 0, 0.674235463, 0)
+Credits1_4.Size = UDim2.new(0, 190, 0, 47)
+Credits1_4.Font = Enum.Font.Fantasy
+Credits1_4.Text = "https://discord.gg/vJAK6pfG"
+Credits1_4.TextColor3 = Color3.fromRGB(207, 207, 207)
+Credits1_4.TextSize = 25.000
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Frame
+TopBar.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TopBar.Position = UDim2.new(0, 0, -0.00584627036, 0)
+TopBar.Size = UDim2.new(0, 568, 0, 58)
+
+ImageLabel_5.Parent = TopBar
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.Position = UDim2.new(-0.0702988058, 0, -0.965517282, 0)
+ImageLabel_5.Size = UDim2.new(0, 100, 0, 89)
+ImageLabel_5.Image = "http://www.roblox.com/asset/?id=333602063"
+
+ImageLabel_6.Parent = TopBar
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_6.BackgroundTransparency = 1.000
+ImageLabel_6.Position = UDim2.new(0.045694232, 0, -0.534482956, 0)
+ImageLabel_6.Size = UDim2.new(0, 565, 0, 89)
+ImageLabel_6.Image = "http://www.roblox.com/asset/?id=850806532"
+
+UICorner_3.Parent = TopBar
+
+TextLabel_3.Parent = TopBar
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.0528168678, 0, 0.362068653, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.Fantasy
+TextLabel_3.Text = "WATCHWARE V3"
+TextLabel_3.TextColor3 = Color3.fromRGB(245, 245, 245)
+TextLabel_3.TextSize = 16.000
+
+TextLabel_4.Parent = TopBar
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.161971867, 0, 0.362068653, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.Fantasy
+TextLabel_4.Text = "made by weelshot#0553"
+TextLabel_4.TextColor3 = Color3.fromRGB(245, 245, 245)
+TextLabel_4.TextSize = 11.000
+
+UICorner_4.Parent = Frame
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = Frame
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsFrame.BackgroundTransparency = 1.000
+SettingsFrame.Position = UDim2.new(0.244288221, 0, 0.167647064, 0)
+SettingsFrame.Size = UDim2.new(0, 416, 0, 270)
+
+WelcomeTo.Name = "Welcome To"
+WelcomeTo.Parent = SettingsFrame
+WelcomeTo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeTo.BackgroundTransparency = 1.000
+WelcomeTo.Position = UDim2.new(0.383915335, 0, 0.0838120878, 0)
+WelcomeTo.Size = UDim2.new(0, 102, 0, 102)
+WelcomeTo.ZIndex = 1231234
+WelcomeTo.Font = Enum.Font.Fantasy
+WelcomeTo.Text = "Welcome to WatchWare V2! A hub being developed by weelshot#0553."
+WelcomeTo.TextColor3 = Color3.fromRGB(198, 198, 198)
+WelcomeTo.TextSize = 14.000
+WelcomeTo.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Title.Name = "Title"
+Title.Parent = SettingsFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.310101658, 0, -0.00519621372, 0)
+Title.Size = UDim2.new(0, 170, 0, 44)
+Title.ZIndex = 1231234
+Title.Font = Enum.Font.Gotham
+Title.Text = "WatchWare V2"
+Title.TextColor3 = Color3.fromRGB(198, 198, 198)
+Title.TextSize = 25.000
+Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Desc.Name = "Desc"
+Desc.Parent = SettingsFrame
+Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc.BackgroundTransparency = 1.000
+Desc.Position = UDim2.new(-0.0247385316, 0, 0.186697051, 0)
+Desc.Size = UDim2.new(0, 428, 0, 125)
+Desc.ZIndex = 1231234
+Desc.Font = Enum.Font.Fantasy
+Desc.Text = "Credits to weelshot#0553 and Brim#2509 for developing this script hub."
+Desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc.TextSize = 18.000
+Desc.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Desc.TextWrapped = true
+
+Greybox.Name = "Greybox"
+Greybox.Parent = SettingsFrame
+Greybox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Greybox.BackgroundTransparency = 1.000
+Greybox.Position = UDim2.new(-0.0316932388, 0, -0.00397632737, 0)
+Greybox.Size = UDim2.new(0, 431, 0, 270)
+Greybox.Image = "rbxassetid://3570695787"
+Greybox.ImageColor3 = Color3.fromRGB(24, 24, 24)
+Greybox.ScaleType = Enum.ScaleType.Slice
+Greybox.SliceCenter = Rect.new(100, 100, 100, 100)
+Greybox.SliceScale = 0.120
+
+Tree.Name = "Tree"
+Tree.Parent = SettingsFrame
+Tree.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tree.BackgroundTransparency = 1.000
+Tree.Position = UDim2.new(0.761670053, 0, 0.625191271, 0)
+Tree.Size = UDim2.new(0, 100, 0, 100)
+Tree.ZIndex = 2
+Tree.Image = "http://www.roblox.com/asset/?id=18558760"
+
+ImageLabel_7.Parent = SettingsFrame
+ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_7.BackgroundTransparency = 1.000
+ImageLabel_7.Position = UDim2.new(0, 0, -0.0962508619, 0)
+ImageLabel_7.Size = UDim2.new(0, 410, 0, 245)
+ImageLabel_7.Image = "http://www.roblox.com/asset/?id=8032099087"
+ImageLabel_7.ImageTransparency = 0.600
+
+TextButton.Parent = SettingsFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TextButton.Position = UDim2.new(0.0410649478, 0, 0.873529434, 0)
+TextButton.Size = UDim2.new(0, 139, 0, 26)
+TextButton.Font = Enum.Font.Fantasy
+TextButton.Text = "Infinite Yield"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 20.000
+
+-- Scripts:
+
+local function JUFRTCF_fake_script() -- Scripts.LocalScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.SettingsFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
+	end)
+end
+coroutine.wrap(JUFRTCF_fake_script)()
+local function SOXBF_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditsFrame.Visible = true
+		script.Parent.Parent.Parent.SettingsFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+	end)
+end
+coroutine.wrap(SOXBF_fake_script)()
+local function XRNJLLY_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.SettingsFrame.Visible = true
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+	end)
+end
+coroutine.wrap(XRNJLLY_fake_script)()
+local function HYHK_fake_script() -- controllabledummy.LocalScript 
+	local script = Instance.new('LocalScript', controllabledummy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/fe-dummy/main/fe%20dummy"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(HYHK_fake_script)()
+local function POCLWT_fake_script() -- catpet.LocalScript 
+	local script = Instance.new('LocalScript', catpet)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/fe-cat/main/fe%20cat"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(POCLWT_fake_script)()
+local function GKUJEMS_fake_script() -- VHUB.LocalScript 
+	local script = Instance.new('LocalScript', VHUB)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\52\103\102\114\72\120\52\82'),true))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(GKUJEMS_fake_script)()
+local function OYRDMF_fake_script() -- Syntax13.LocalScript 
+	local script = Instance.new('LocalScript', Syntax13)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxFE/fbbffe71caabfa5341bb0e09865c0659574978e8/GG.txt'),true))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(OYRDMF_fake_script)()
+local function VMYUD_fake_script() -- StreamSniper.LocalScript 
+	local script = Instance.new('LocalScript', StreamSniper)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(VMYUD_fake_script)()
+local function XRXFOX_fake_script() -- SCP096.LocalScript 
+	local script = Instance.new('LocalScript', SCP096)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/fe-scp-096/main/scp"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(XRXFOX_fake_script)()
+local function MPMNXL_fake_script() -- OwlHub.LocalScript 
+	local script = Instance.new('LocalScript', OwlHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+	
+	
+	
+end
+coroutine.wrap(MPMNXL_fake_script)()
+local function ZPIOZY_fake_script() -- LXHub.LocalScript 
+	local script = Instance.new('LocalScript', LXHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LionelStreaming/GumaHub/main/LX-FE-Hub"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(ZPIOZY_fake_script)()
+local function FZGLDS_fake_script() -- FEDog.LocalScript 
+	local script = Instance.new('LocalScript', FEDog)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/FE-Dog-Pet-not-mine-/main/fe%20dog"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(FZGLDS_fake_script)()
+local function WJXS_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(WJXS_fake_script)()
+local function DRGM_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(DRGM_fake_script)()
